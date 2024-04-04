@@ -1,0 +1,54 @@
+@using MVCLIB.Models;
+@{
+    ViewData["Title"] = "Show Page";
+}
+<html>
+<head>
+
+<link rel="stylesheet" href="~/css/table.css" type="text/css" />
+</head>
+<body >
+
+<div class="text-center">
+    <h1 class="display-4">Showing all Employees</h1>
+    <div style="text-align:left; margin: 8px;">
+   <button ><a  href="Search"> search<a/></button>
+   </div>
+    @{
+         <table>
+         <tr>
+         <th>Id</th>
+         <th>FirstName</th>
+         <th>LastName</th>
+         <th>Email</th>
+         <th>Address</th>
+         <th>Password</th>
+         <th>Department Id</th>
+         <th>Manager Id</th>
+        @* <th>Details</th>*@
+         <th>Update</th>
+         <th>Delete</th>
+         </tr>
+         @foreach (var item in ViewData["allemployees"] as List<Employee> )  
+         {
+            <tr>
+            <td>@item.Id</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.Email</td>
+            <td>@item.Address</td>
+            <td>@item.Password</td>
+            <td>@item.DeptId</td>
+            <td>@item.ManagerId</td>
+           @* <td><button>@Html.ActionLink("Details","ShowById","Employee",new {Id=item.Id},"")</button></td>*@
+            <td><button>@Html.ActionLink("Update","Update","Employee",new {Id=item.Id},"")</button></td>
+            <td><button>@Html.ActionLink("Delete","Delete","Employee",new {Id=item.Id},"")</button></td>
+            </tr>
+         }
+         </table>
+         
+    }
+    
+</div>
+</body>
+</html>

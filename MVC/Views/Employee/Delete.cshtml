@@ -1,0 +1,42 @@
+
+@model MVCLIB.Models.Employee
+
+ @{ ViewData["Title"] = "Delete Page"; }
+<html>
+  <head>
+   <link rel="stylesheet"  href="~/css/table.css" type="text/css"/>
+  </head>
+ <body>
+ <h2 align="center">Delete</h2>
+    @using (Html.BeginForm()) {
+    <table align="center">
+      <tr>
+        <th>@Html.LabelFor(model => model.Id)</th>
+        <th>@Html.LabelFor(model => model.FirstName)</th>
+        <th>@Html.LabelFor(model => model.LastName)</th>
+        <th>@Html.LabelFor(model => model.Email)</th>
+        <th>@Html.LabelFor(model => model.Address)</th>
+        <th>@Html.LabelFor(model => model.Password)</th>
+        <th>@Html.LabelFor(model => model.DeptId)</th>
+        <th>@Html.LabelFor(model => model.ManagerId)</th>
+      </tr>
+      <tr>
+        <td>@Html.DisplayFor(model => model.Id)</td>
+        <td>@Html.DisplayFor(model => model.FirstName)</td>
+        <td>@Html.DisplayFor(model => model.LastName)</td>
+        <td>@Html.DisplayFor(model => model.Email)</td>
+        <td>@Html.DisplayFor(model => model.Address)</td>
+        <td>@Html.DisplayFor(model => model.Password)</td>
+        <td>@Html.DisplayFor(model => model.DeptId)</td>
+        <td>@Html.DisplayFor(model => model.ManagerId)</td>
+      </tr>
+    </table>
+    
+    <div style="text-align: center;">
+    <button> <input type="submit" value="Delete" /> </button>
+    <button> <a  href="/Employee/ShowAll"> Back </a></button>
+    </div>
+    }
+    
+  </body>
+</html>

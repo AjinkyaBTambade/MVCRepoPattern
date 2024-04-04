@@ -1,6 +1,19 @@
+using Core.Services;
+using MVCLIB.Repositories;
+using MVCLIB.Repositories.Interfaces;
+using MVCLIB.Services;
+using MVCLIB.Services.Interfaces;
+
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddTransient<IEmployeeService, EmployeeServices>();
+
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

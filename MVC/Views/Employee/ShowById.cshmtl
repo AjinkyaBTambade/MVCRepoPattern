@@ -1,0 +1,54 @@
+@using MVCLIB.Models;
+@model MVCLIB.Models.Employee
+@{
+    ViewData["Title"] = "Show Page";
+}
+<html>
+<head>
+<link rel="stylesheet" href="~/css/table.css"/>
+</head>
+<body >
+
+<div class="text-center">
+    <h1 class="display-4">Show Employee</h1>
+
+    @{
+       
+         Employee employee=Model;
+         
+         <table>
+         <tr>
+         <th>Id</th>
+         <th>FirstName</th>
+         <th>LastName</th>
+         <th>Email</th>
+         <th>Address</th>
+         <th>Password</th>
+         <th>Department Id</th>
+         <th>Manager Id</th>
+         <th>Update</th>
+         <th>Delete</th>
+         </tr>
+            <tr>
+            <td>@employee.Id</td>
+            <td>@employee.FirstName</td>
+            <td>@employee.LastName</td>
+            <td>@employee.Email</td>
+            <td>@employee.Address</td>
+            <td>@employee.Password</td>
+            <td>@employee.DeptId</td>
+            <td>@employee.ManagerId</td>
+            <td><button>@Html.ActionLink("Update","Update","Employee",new {Id=employee.Id},"")</button></td>
+            <td><button>@Html.ActionLink("Delete","Delete","Employee",new {Id=employee.Id},"")</button></td>
+            </tr>
+         </table>
+    }
+    <div style="text-align: center;">
+    <button> <a  href="/Employee/ShowAll"> Home </a></button>
+    <button> <a  href="/Employee/Search"> Back </a></button>
+</div>
+    
+</div>
+</body>
+</html>
+
