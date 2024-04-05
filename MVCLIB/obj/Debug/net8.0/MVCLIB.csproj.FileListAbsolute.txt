@@ -9,3 +9,5 @@ D:\AJ\MVCRepoPattern\MVCLIB\obj\Debug\net8.0\MVCLIB.dll
 D:\AJ\MVCRepoPattern\MVCLIB\obj\Debug\net8.0\refint\MVCLIB.dll
 D:\AJ\MVCRepoPattern\MVCLIB\obj\Debug\net8.0\MVCLIB.pdb
 D:\AJ\MVCRepoPattern\MVCLIB\obj\Debug\net8.0\ref\MVCLIB.dll
+D:\AJ\MVCRepoPattern\MVCLIB\obj\Debug\net8.0\MVCLIB.csproj.AssemblyReference.cache
+D:\AJ\MVCRepoPattern\MVCLIB\obj\Debug\net8.0\MVCLIB.sourcelink.json

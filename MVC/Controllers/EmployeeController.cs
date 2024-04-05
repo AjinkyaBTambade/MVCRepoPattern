@@ -22,6 +22,7 @@ public class EmployeeController : Controller
     {
         return View();
     }
+
     [HttpGet]
     public IActionResult ShowAll()
     {
@@ -29,13 +30,14 @@ public class EmployeeController : Controller
         ViewData["allemployees"] = _employeeservice.GetAllEmployees();
         return View();
     }
-[HttpGet]
+
+    [HttpGet]
     public IActionResult ShowById()
     {
         return View();
     }
 
-[HttpGet]
+    [HttpGet]
     public IActionResult Search()
     {
         return View();
@@ -77,6 +79,7 @@ public class EmployeeController : Controller
        var employee =_employeeservice.GetEmployeeById(id);
         return View(employee);
     }
+
     [HttpPost]
     public IActionResult Update(Employee employee)
     {

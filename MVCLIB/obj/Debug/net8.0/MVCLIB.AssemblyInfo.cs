@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVCLIB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4853d80da66e3b1264a6f737c8ae3e20a1405fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85e45e1a57b868de797f1885570a7b8c40502bb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVCLIB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVCLIB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
