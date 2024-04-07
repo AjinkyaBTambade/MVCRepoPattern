@@ -51,8 +51,7 @@ public class EmployeeController : Controller
         return View("ShowById", employee);
     }
 
-
-
+    
     [HttpGet]
     public IActionResult Insert()
     {
@@ -70,8 +69,6 @@ public class EmployeeController : Controller
 
         return RedirectToAction("ShowAll", "Employee");
     }
-
-
 
     [HttpGet]
     public IActionResult Update(int id)
